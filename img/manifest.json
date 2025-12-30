@@ -1,0 +1,421 @@
+{
+  "generated_at": "2025-12-01T15:56:45.700785",
+  "stimuli": [
+    {
+      "identity_id": "P001",
+      "method": "instantid",
+      "variant": "1",
+      "image_url": "img/P001/instantid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "instantid",
+      "variant": "2",
+      "image_url": "img/P001/instantid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "instantid",
+      "variant": "3",
+      "image_url": "img/P001/instantid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "instantid",
+      "variant": "4",
+      "image_url": "img/P001/instantid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "pulid",
+      "variant": "1",
+      "image_url": "img/P001/pulid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "pulid",
+      "variant": "2",
+      "image_url": "img/P001/pulid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "pulid",
+      "variant": "3",
+      "image_url": "img/P001/pulid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "pulid",
+      "variant": "4",
+      "image_url": "img/P001/pulid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "qwen",
+      "variant": "1",
+      "image_url": "img/P001/qwen/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "qwen",
+      "variant": "2",
+      "image_url": "img/P001/qwen/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "qwen",
+      "variant": "3",
+      "image_url": "img/P001/qwen/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P001",
+      "method": "qwen",
+      "variant": "4",
+      "image_url": "img/P001/qwen/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P001/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "instantid",
+      "variant": "1",
+      "image_url": "img/P002/instantid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "instantid",
+      "variant": "2",
+      "image_url": "img/P002/instantid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "instantid",
+      "variant": "3",
+      "image_url": "img/P002/instantid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "instantid",
+      "variant": "4",
+      "image_url": "img/P002/instantid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "instantid",
+      "variant": "5",
+      "image_url": "img/P002/instantid/v5.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "pulid",
+      "variant": "1",
+      "image_url": "img/P002/pulid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "pulid",
+      "variant": "2",
+      "image_url": "img/P002/pulid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "pulid",
+      "variant": "3",
+      "image_url": "img/P002/pulid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "pulid",
+      "variant": "4",
+      "image_url": "img/P002/pulid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "pulid",
+      "variant": "5",
+      "image_url": "img/P002/pulid/v5.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "qwen",
+      "variant": "1",
+      "image_url": "img/P002/qwen/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "qwen",
+      "variant": "2",
+      "image_url": "img/P002/qwen/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "qwen",
+      "variant": "3",
+      "image_url": "img/P002/qwen/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P002",
+      "method": "qwen",
+      "variant": "4",
+      "image_url": "img/P002/qwen/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P002/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "instantid",
+      "variant": "1",
+      "image_url": "img/P003/instantid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "instantid",
+      "variant": "2",
+      "image_url": "img/P003/instantid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "instantid",
+      "variant": "3",
+      "image_url": "img/P003/instantid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "instantid",
+      "variant": "4",
+      "image_url": "img/P003/instantid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "pulid",
+      "variant": "1",
+      "image_url": "img/P003/pulid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "pulid",
+      "variant": "2",
+      "image_url": "img/P003/pulid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "pulid",
+      "variant": "3",
+      "image_url": "img/P003/pulid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "pulid",
+      "variant": "4",
+      "image_url": "img/P003/pulid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "qwen",
+      "variant": "1",
+      "image_url": "img/P003/qwen/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "qwen",
+      "variant": "2",
+      "image_url": "img/P003/qwen/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "qwen",
+      "variant": "3",
+      "image_url": "img/P003/qwen/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P003",
+      "method": "qwen",
+      "variant": "4",
+      "image_url": "img/P003/qwen/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P003/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "instantid",
+      "variant": "1",
+      "image_url": "img/P004/instantid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "instantid",
+      "variant": "2",
+      "image_url": "img/P004/instantid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "instantid",
+      "variant": "3",
+      "image_url": "img/P004/instantid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "instantid",
+      "variant": "4",
+      "image_url": "img/P004/instantid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "pulid",
+      "variant": "1",
+      "image_url": "img/P004/pulid/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "pulid",
+      "variant": "2",
+      "image_url": "img/P004/pulid/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "pulid",
+      "variant": "3",
+      "image_url": "img/P004/pulid/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "pulid",
+      "variant": "4",
+      "image_url": "img/P004/pulid/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "qwen",
+      "variant": "1",
+      "image_url": "img/P004/qwen/v1.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "qwen",
+      "variant": "2",
+      "image_url": "img/P004/qwen/v2.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "qwen",
+      "variant": "3",
+      "image_url": "img/P004/qwen/v3.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    },
+    {
+      "identity_id": "P004",
+      "method": "qwen",
+      "variant": "4",
+      "image_url": "img/P004/qwen/v4.jpg",
+      "thumb_url": "",
+      "ref_url": "img/P004/reference.jpg"
+    }
+  ],
+  "summary": {
+    "total_stimuli": 50,
+    "participants": [
+      "P001",
+      "P002",
+      "P003",
+      "P004"
+    ],
+    "methods": [
+      "instantid",
+      "pulid",
+      "qwen"
+    ],
+    "participant_count": 4,
+    "method_count": 3
+  }
+}

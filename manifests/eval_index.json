@@ -1,0 +1,551 @@
+[
+  {
+    "person_id": "P000",
+    "method": "caricaturebooth",
+    "sample_id": "cc196c42a848",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\caricaturebooth\\v1.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\caricaturebooth\\v1.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "caricaturebooth",
+    "sample_id": "9bc232428552",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\caricaturebooth\\v3.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\caricaturebooth\\v3.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "caricaturebooth",
+    "sample_id": "e30d19c378d5",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\caricaturebooth\\v4.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\caricaturebooth\\v4.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "pulid",
+    "sample_id": "928889312dc6",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\pulid\\v1.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\pulid\\v1.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "pulid",
+    "sample_id": "ac95d42970e5",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\pulid\\v2.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\pulid\\v2.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "pulid",
+    "sample_id": "d38c66a53b0e",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\pulid\\v3.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\pulid\\v3.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "pulid",
+    "sample_id": "32a1d2aecd90",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\pulid\\v4.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\pulid\\v4.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "qwen",
+    "sample_id": "bdbb81d66d85",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\qwen\\v1.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\qwen\\v1.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "qwen",
+    "sample_id": "7d60e1c6f2ce",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\qwen\\v2.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\qwen\\v2.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "qwen",
+    "sample_id": "ee5dd5a6facc",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\qwen\\v3.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\qwen\\v3.png"
+  },
+  {
+    "person_id": "P000",
+    "method": "qwen",
+    "sample_id": "9bddb2943a5c",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P000\\qwen\\v4.png",
+    "reference_rel": "P000\\reference.jpg",
+    "caricature_rel": "P000\\qwen\\v4.png"
+  },
+  {
+    "person_id": "P001",
+    "method": "instantid",
+    "sample_id": "45db5d15ac51",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\instantid\\v1.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\instantid\\v1.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "instantid",
+    "sample_id": "2fbd1f1db92e",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\instantid\\v2.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\instantid\\v2.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "instantid",
+    "sample_id": "d11be5e6d168",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\instantid\\v3.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\instantid\\v3.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "instantid",
+    "sample_id": "aa81e04feddc",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\instantid\\v4.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\instantid\\v4.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "pulid",
+    "sample_id": "64c482539cc3",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\pulid\\v1.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\pulid\\v1.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "pulid",
+    "sample_id": "9feb3b3ead5f",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\pulid\\v2.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\pulid\\v2.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "pulid",
+    "sample_id": "2e7e4dce04a3",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\pulid\\v3.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\pulid\\v3.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "pulid",
+    "sample_id": "e3ef01770c44",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\pulid\\v4.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\pulid\\v4.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "qwen",
+    "sample_id": "8cadaafdf437",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\qwen\\v1.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\qwen\\v1.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "qwen",
+    "sample_id": "f7a107545361",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\qwen\\v2.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\qwen\\v2.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "qwen",
+    "sample_id": "e723e149c0c2",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\qwen\\v3.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\qwen\\v3.jpg"
+  },
+  {
+    "person_id": "P001",
+    "method": "qwen",
+    "sample_id": "2541423a3e33",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P001\\qwen\\v4.jpg",
+    "reference_rel": "P001\\reference.jpg",
+    "caricature_rel": "P001\\qwen\\v4.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "instantid",
+    "sample_id": "580df9f7125b",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\instantid\\v1.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\instantid\\v1.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "instantid",
+    "sample_id": "27269dbe8570",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\instantid\\v2.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\instantid\\v2.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "instantid",
+    "sample_id": "efcc8a3877e8",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\instantid\\v3.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\instantid\\v3.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "instantid",
+    "sample_id": "29ed4a7fde9c",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\instantid\\v4.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\instantid\\v4.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "instantid",
+    "sample_id": "dd05d0397e46",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\instantid\\v5.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\instantid\\v5.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "pulid",
+    "sample_id": "4081ac9ebc26",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\pulid\\v1.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\pulid\\v1.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "pulid",
+    "sample_id": "da2c155e2ac8",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\pulid\\v2.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\pulid\\v2.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "pulid",
+    "sample_id": "85b49e7bb8e0",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\pulid\\v3.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\pulid\\v3.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "pulid",
+    "sample_id": "e7f34eda6a18",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\pulid\\v4.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\pulid\\v4.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "pulid",
+    "sample_id": "571b573f7c86",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\pulid\\v5.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\pulid\\v5.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "qwen",
+    "sample_id": "a8384bc00aaa",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\qwen\\v1.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\qwen\\v1.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "qwen",
+    "sample_id": "bb6aa049e6ad",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\qwen\\v2.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\qwen\\v2.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "qwen",
+    "sample_id": "505b3ee934d3",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\qwen\\v3.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\qwen\\v3.jpg"
+  },
+  {
+    "person_id": "P002",
+    "method": "qwen",
+    "sample_id": "48bbda56f3b8",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P002\\qwen\\v4.jpg",
+    "reference_rel": "P002\\reference.jpg",
+    "caricature_rel": "P002\\qwen\\v4.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "instantid",
+    "sample_id": "59d5b720227d",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\instantid\\v1.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\instantid\\v1.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "instantid",
+    "sample_id": "5a94fe850bb1",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\instantid\\v2.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\instantid\\v2.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "instantid",
+    "sample_id": "ef3dc005f6ca",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\instantid\\v3.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\instantid\\v3.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "instantid",
+    "sample_id": "5a44cab1a4b2",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\instantid\\v4.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\instantid\\v4.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "pulid",
+    "sample_id": "35e305d37d0e",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\pulid\\v1.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\pulid\\v1.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "pulid",
+    "sample_id": "95dbc7b0397b",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\pulid\\v2.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\pulid\\v2.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "pulid",
+    "sample_id": "f240ea39c592",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\pulid\\v3.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\pulid\\v3.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "pulid",
+    "sample_id": "373c74a67844",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\pulid\\v4.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\pulid\\v4.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "qwen",
+    "sample_id": "98abc7d8dba7",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\qwen\\v1.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\qwen\\v1.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "qwen",
+    "sample_id": "e428be129ec6",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\qwen\\v2.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\qwen\\v2.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "qwen",
+    "sample_id": "3afec5a01690",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\qwen\\v3.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\qwen\\v3.jpg"
+  },
+  {
+    "person_id": "P003",
+    "method": "qwen",
+    "sample_id": "6a384338aa55",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P003\\qwen\\v4.jpg",
+    "reference_rel": "P003\\reference.jpg",
+    "caricature_rel": "P003\\qwen\\v4.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "instantid",
+    "sample_id": "d90d626880d7",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\instantid\\v1.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\instantid\\v1.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "instantid",
+    "sample_id": "48cbb58e225d",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\instantid\\v2.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\instantid\\v2.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "instantid",
+    "sample_id": "84ecd3c46182",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\instantid\\v3.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\instantid\\v3.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "instantid",
+    "sample_id": "2d34c49b31b4",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\instantid\\v4.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\instantid\\v4.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "pulid",
+    "sample_id": "a3d194c88d34",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\pulid\\v1.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\pulid\\v1.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "pulid",
+    "sample_id": "9bf8ac1c0b48",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\pulid\\v2.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\pulid\\v2.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "pulid",
+    "sample_id": "2143c2266189",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\pulid\\v3.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\pulid\\v3.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "pulid",
+    "sample_id": "7be26c72213a",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\pulid\\v4.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\pulid\\v4.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "qwen",
+    "sample_id": "f3a1128684b1",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\qwen\\v1.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\qwen\\v1.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "qwen",
+    "sample_id": "6de2f97d1e2c",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\qwen\\v2.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\qwen\\v2.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "qwen",
+    "sample_id": "bef7f191d2d0",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\qwen\\v3.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\qwen\\v3.jpg"
+  },
+  {
+    "person_id": "P004",
+    "method": "qwen",
+    "sample_id": "c38f82399927",
+    "reference_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\reference.jpg",
+    "caricature_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img\\P004\\qwen\\v4.jpg",
+    "reference_rel": "P004\\reference.jpg",
+    "caricature_rel": "P004\\qwen\\v4.jpg"
+  }
+]

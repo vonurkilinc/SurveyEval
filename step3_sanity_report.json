@@ -1,0 +1,456 @@
+{
+  "features_dir": "features",
+  "checks": {
+    "files": {
+      "image_records.jsonl": {
+        "exists": true,
+        "message": "image_records.jsonl exists (36,676 bytes)"
+      },
+      "geometry_descriptors.npz": {
+        "exists": true,
+        "message": "geometry_descriptors.npz exists (198,874 bytes)"
+      },
+      "clip_embeddings.npz": {
+        "exists": true,
+        "message": "clip_embeddings.npz exists (126,903 bytes)"
+      },
+      "identity_embeddings.npz": {
+        "exists": true,
+        "message": "identity_embeddings.npz exists (84,438 bytes)"
+      },
+      "stepD_report.json": {
+        "exists": true,
+        "message": "stepD_report.json exists (800 bytes)"
+      }
+    },
+    "npz_files": {
+      "geometry": {
+        "keys": {
+          "shape": [
+            56
+          ],
+          "dtype": "<U12",
+          "size": 56,
+          "is_string_array": true,
+          "sample_values": [
+            "00fe80e8ac08",
+            "e74052815ba1",
+            "2ad3b68654d4",
+            "e783c38f402d",
+            "13a60e291deb"
+          ]
+        },
+        "G": {
+          "shape": [
+            56,
+            956
+          ],
+          "dtype": "float32",
+          "size": 53536,
+          "min": -2.8052167892456055,
+          "max": 2.5310709476470947,
+          "mean": 4.346543036604089e-08,
+          "has_nan": false,
+          "has_inf": false
+        }
+      },
+      "clip": {
+        "keys": {
+          "shape": [
+            66
+          ],
+          "dtype": "<U12",
+          "size": 66,
+          "is_string_array": true,
+          "sample_values": [
+            "00fe80e8ac08",
+            "e74052815ba1",
+            "2ad3b68654d4",
+            "e783c38f402d",
+            "13a60e291deb"
+          ]
+        },
+        "clip": {
+          "shape": [
+            66,
+            512
+          ],
+          "dtype": "float32",
+          "size": 33792,
+          "min": -0.7364758849143982,
+          "max": 0.19784636795520782,
+          "mean": -0.0009763096459209919,
+          "has_nan": false,
+          "has_inf": false
+        }
+      },
+      "identity": {
+        "keys": {
+          "shape": [
+            44
+          ],
+          "dtype": "<U12",
+          "size": 44,
+          "is_string_array": true,
+          "sample_values": [
+            "00fe80e8ac08",
+            "e74052815ba1",
+            "2ad3b68654d4",
+            "e783c38f402d",
+            "13a60e291deb"
+          ]
+        },
+        "id": {
+          "shape": [
+            44,
+            512
+          ],
+          "dtype": "float32",
+          "size": 22528,
+          "min": -0.16348601877689362,
+          "max": 0.1843562126159668,
+          "mean": 0.0016339392168447375,
+          "has_nan": false,
+          "has_inf": false
+        }
+      }
+    },
+    "records": {
+      "total": 66,
+      "ok": 56,
+      "failed": 10,
+      "warnings": 22,
+      "error_types": {
+        "Landmarks failed: No face landmarks": 10
+      },
+      "failed_images": [
+        {
+          "key": "433480324631",
+          "image_rel": "P000\\qwen\\v3.png",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "3eb2112a62f7",
+          "image_rel": "P000\\qwen\\v4.png",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "32393c24b017",
+          "image_rel": "P001\\qwen\\v2.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "c7f161b3c7cc",
+          "image_rel": "P001\\qwen\\v3.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "644860a75486",
+          "image_rel": "P001\\qwen\\v4.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "ad8a6837d107",
+          "image_rel": "P002\\qwen\\v1.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "c9fe097a75eb",
+          "image_rel": "P002\\qwen\\v3.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "21b678bca088",
+          "image_rel": "P002\\qwen\\v4.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "d76837f1c038",
+          "image_rel": "P003\\qwen\\v3.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        },
+        {
+          "key": "b633dbf5e7ca",
+          "image_rel": "P004\\qwen\\v4.jpg",
+          "errors": [
+            "Landmarks failed: No face landmarks"
+          ]
+        }
+      ],
+      "warned_images": [
+        {
+          "key": "6a1062ce1b9f",
+          "image_rel": "P000\\qwen\\v1.png",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "d2e80b051734",
+          "image_rel": "P000\\qwen\\v2.png",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "3eb2112a62f7",
+          "image_rel": "P000\\qwen\\v4.png",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "9edcd3f78b66",
+          "image_rel": "P000\\reference.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "a583fffe0a84",
+          "image_rel": "P001\\pulid\\v3.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "32393c24b017",
+          "image_rel": "P001\\qwen\\v2.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "c7f161b3c7cc",
+          "image_rel": "P001\\qwen\\v3.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "644860a75486",
+          "image_rel": "P001\\qwen\\v4.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "ad8a6837d107",
+          "image_rel": "P002\\qwen\\v1.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "8c2effe5f3dc",
+          "image_rel": "P002\\qwen\\v2.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "c9fe097a75eb",
+          "image_rel": "P002\\qwen\\v3.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "21b678bca088",
+          "image_rel": "P002\\qwen\\v4.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "58eb456aa122",
+          "image_rel": "P003\\pulid\\v3.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "467eda758823",
+          "image_rel": "P003\\qwen\\v1.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "a0715e24d183",
+          "image_rel": "P003\\qwen\\v2.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "d76837f1c038",
+          "image_rel": "P003\\qwen\\v3.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "16c3508f1b7d",
+          "image_rel": "P003\\qwen\\v4.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "3cc54c3471af",
+          "image_rel": "P004\\pulid\\v3.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "cda586b9b8e3",
+          "image_rel": "P004\\qwen\\v1.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "8883be11765a",
+          "image_rel": "P004\\qwen\\v2.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "8a88be9eb3c2",
+          "image_rel": "P004\\qwen\\v3.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        },
+        {
+          "key": "b633dbf5e7ca",
+          "image_rel": "P004\\qwen\\v4.jpg",
+          "warnings": [
+            "Identity: no face detected by insightface."
+          ]
+        }
+      ]
+    },
+    "key_consistency": {
+      "record_keys": 66,
+      "geom_keys": 56,
+      "clip_keys": 66,
+      "id_keys": 44,
+      "issues": [],
+      "missing_geom_count": 10,
+      "missing_id_count": 22,
+      "missing_geom_samples": [
+        "ad8a6837d107",
+        "21b678bca088",
+        "32393c24b017",
+        "3eb2112a62f7",
+        "c7f161b3c7cc"
+      ],
+      "missing_id_samples": [
+        "8a88be9eb3c2",
+        "8883be11765a",
+        "467eda758823",
+        "d76837f1c038",
+        "ad8a6837d107"
+      ]
+    },
+    "data_quality": {
+      "geometry": {
+        "shape": [
+          56,
+          956
+        ],
+        "expected_shape_2d": "Unexpected: (56, 956)",
+        "has_nan": false,
+        "has_inf": false,
+        "value_range": [
+          -2.8052167892456055,
+          2.5310709476470947
+        ],
+        "mean": 4.346543036604089e-08
+      },
+      "clip": {
+        "shape": [
+          66,
+          512
+        ],
+        "expected_shape_2d": "(N, 512)",
+        "has_nan": false,
+        "has_inf": false,
+        "norm_range": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "norm_mean": 1.0,
+        "should_be_normalized": "Yes (norms should be ~1.0)"
+      },
+      "identity": {
+        "shape": [
+          44,
+          512
+        ],
+        "expected_shape_2d": "(N, 512)",
+        "has_nan": false,
+        "has_inf": false,
+        "norm_range": [
+          0.9999998807907104,
+          1.0
+        ],
+        "norm_mean": 1.0,
+        "should_be_normalized": "Yes (norms should be ~1.0)"
+      }
+    },
+    "stepd_report": {
+      "timestamp": "2025-12-25T15:04:12",
+      "index_path": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\manifests\\eval_index.csv",
+      "img_root": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\img",
+      "out_dir": "C:\\Users\\Onur\\Documents\\Project\\SurveyEval\\features",
+      "unique_images": 66,
+      "geometry_saved": 56,
+      "clip_saved": 66,
+      "identity_saved": 44,
+      "failures": {
+        "missing_file": 0,
+        "landmarks_fail": 10,
+        "low_landmark_conf": 0,
+        "geom_fail": 0,
+        "clip_fail": 0,
+        "id_fail": 22
+      },
+      "elapsed_sec": 20.51674723625183,
+      "notes": [
+        "Geometry mode: dense_landmarks (flattened aligned landmarks).",
+        "CLIP uses OpenCLIP; identity uses InsightFace if enabled.",
+        "Review image_records.jsonl for per-image warnings/errors."
+      ]
+    }
+  },
+  "summary": {
+    "status": "PASS",
+    "errors": 0,
+    "warnings": 0
+  },
+  "errors": [],
+  "warnings": []
+}
