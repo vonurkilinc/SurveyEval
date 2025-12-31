@@ -1,0 +1,9 @@
+image_id,path,rel_path,face_detected,num_faces,landmark_conf,bbox_w,bbox_h
+d3e3f1234dfab24b,C:\Users\Onur\Documents\Project\SurveyEval\ffhq_1024\images1024x1024\00000\00000.png,images1024x1024\00000\00000.png,True,1,1.0,582.046142578125,567.6471557617188
+8948eac5c816da2b,C:\Users\Onur\Documents\Project\SurveyEval\ffhq_1024\images1024x1024\00000\00001.png,images1024x1024\00000\00001.png,True,1,1.0,610.4638519287109,717.0380249023438
+7014e473d19eca99,C:\Users\Onur\Documents\Project\SurveyEval\ffhq_1024\images1024x1024\00000\00002.png,images1024x1024\00000\00002.png,True,1,1.0,561.9226531982422,605.4837646484375
+ed9f59551b56da11,C:\Users\Onur\Documents\Project\SurveyEval\ffhq_1024\images1024x1024\00000\00003.png,images1024x1024\00000\00003.png,True,1,1.0,576.0029907226562,597.3364562988281
+abf48732b94ec95a,C:\Users\Onur\Documents\Project\SurveyEval\ffhq_1024\images1024x1024\00000\00004.png,images1024x1024\00000\00004.png,True,1,1.0,513.4961547851562,654.6024475097656
+
+
+
