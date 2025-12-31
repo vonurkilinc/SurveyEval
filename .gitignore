@@ -35,14 +35,24 @@ ENV/
 *~
 
 # Large datasets and images
+# Exclude ffhq_1024 directory completely
 ffhq_1024/
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.bmp
-*.tiff
-*.webp
+# Allow images outside of ffhq_1024 (use negation patterns)
+!*.jpg
+!*.jpeg
+!*.png
+!*.gif
+!*.bmp
+!*.tiff
+!*.webp
+# But exclude images inside ffhq_1024
+ffhq_1024/**/*.jpg
+ffhq_1024/**/*.jpeg
+ffhq_1024/**/*.png
+ffhq_1024/**/*.gif
+ffhq_1024/**/*.bmp
+ffhq_1024/**/*.tiff
+ffhq_1024/**/*.webp
 
 # Model files and checkpoints
 *.ckpt

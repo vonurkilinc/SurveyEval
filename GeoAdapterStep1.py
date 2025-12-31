@@ -29,6 +29,7 @@ Dependencies:
 from __future__ import annotations
 
 import argparse
+import itertools
 import json
 import math
 from dataclasses import dataclass
@@ -37,28 +38,22 @@ from typing import Any, Dict, Optional, Sequence, Tuple, Union
 
 import numpy as np
 
+# Import CQS geometry functions from step1.py (ground truth)
+import step1
 
-# -----------------------------
-# Geometry descriptor (CQS-compatible) + explicit Step-1 I/O API
-# -----------------------------
+# Re-export step1 types/functions for convenience
+AlignResult = step1.AlignResult
+GeometryFeature = step1.GeometryFeature
 
-# This ordering matches:
-# - `step1.py` default_geometry_schema_mediapipe468()
-# - `baselines/*/geometry_stats.json` "feature_names"
-GEOMETRY_FEATURE_NAMES: Tuple[str, ...] = (
-    "face_width_over_height",
-    "left_eye_width_over_interocular",
-    "right_eye_width_over_interocular",
-    "interocular_over_face_width",
-    "mouth_width_over_face_width",
-    "nose_wing_width_over_face_width",
-    "nose_length_over_face_height",
-    "jaw_opening_angle",
-)
+# Get geometry schema from step1.py (ground truth)
+_GEOMETRY_SCHEMA = step1.default_geometry_schema_mediapipe468()
 
+# Derive feature names from schema to ensure ordering matches
+GEOMETRY_FEATURE_NAMES: Tuple[str, ...] = tuple(feat.name for feat in _GEOMETRY_SCHEMA)
 
+# Legacy landmark index dict for backward compatibility (used in tests)
+# These indices are embedded in the schema, but kept here for reference
 LANDMARK_IDXS: Dict[str, int] = {
-    # Stable MediaPipe FaceMesh indices used by CQS baseline
     "forehead": 10,
     "chin": 152,
     "cheek_l": 234,
@@ -76,45 +71,9 @@ LANDMARK_IDXS: Dict[str, int] = {
 }
 
 
-def _dist(a: np.ndarray, b: np.ndarray) -> float:
-    return float(np.linalg.norm(a - b))
-
-
-def _angle_abc(a: np.ndarray, b: np.ndarray, c: np.ndarray, eps: float = 1e-12) -> float:
-    """
-    Angle at b in radians, between vectors (a-b) and (c-b).
-    """
-    v1 = a - b
-    v2 = c - b
-    n1 = float(np.linalg.norm(v1))
-    n2 = float(np.linalg.norm(v2))
-    if n1 < eps or n2 < eps:
-        return float("nan")
-    cosv = float(np.dot(v1, v2) / (n1 * n2 + eps))
-    cosv = max(-1.0, min(1.0, cosv))
-    return float(math.acos(cosv))
-
-
-def compute_eye_centers_mediapipe468(xy_px: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
-    """
-    Matches `step1.py` compute_eye_centers_mediapipe().
-    Eye centers based on stable corner indices:
-      left eye corners: 33 (outer), 133 (inner)
-      right eye corners: 263 (outer), 362 (inner)
-    """
-    left = 0.5 * (xy_px[LANDMARK_IDXS["le_outer"]] + xy_px[LANDMARK_IDXS["le_inner"]])
-    right = 0.5 * (xy_px[LANDMARK_IDXS["re_outer"]] + xy_px[LANDMARK_IDXS["re_inner"]])
-    return left.astype(np.float32), right.astype(np.float32)
-
-
-@dataclass(frozen=True)
-class AlignResult:
-    ok: bool
-    aligned_xy: Optional[np.ndarray]  # (K,2) float32 in canonical coords
-    interocular: float
-    face_height: float
-    face_width: float
-    reject_reason: Optional[str] = None
+# -----------------------------
+# Geometry descriptor (CQS-compatible) + explicit Step-1 I/O API
+# -----------------------------
 
 
 def extract_landmarks(image: Union[str, Path, np.ndarray]) -> np.ndarray:
@@ -170,7 +129,9 @@ def normalize_landmarks(P: np.ndarray, *, allow_rotation: bool = True) -> Tuple[
       - rotate so eyes horizontal (optional)
       - scale so interocular distance = 1
     """
-    ar = align_landmarks_similarity(P, allow_rotation=allow_rotation)
+    # Note: step1.py's align_landmarks_similarity always rotates (no allow_rotation param)
+    # For compatibility, we use step1's version which always rotates (CQS baseline behavior)
+    ar = step1.align_landmarks_similarity(P)
     if not ar.ok or ar.aligned_xy is None:
         raise ValueError(f"normalize_landmarks failed: {ar.reject_reason}")
     return ar.aligned_xy, ar
@@ -181,6 +142,7 @@ def build_geometry_descriptor(P_tilde: np.ndarray, *, align: AlignResult) -> np.
     Step-1 API: build_geometry_descriptor(P_tilde) -> G (D,)
 
     Hard requirement: feature ordering/normalization matches the repo's CQS descriptor.
+    Uses step1.py's geometry_vector (ground truth).
     """
     if not align.ok:
         raise ValueError(f"build_geometry_descriptor requires a valid AlignResult; got reject_reason={align.reject_reason}")
@@ -226,6 +188,8 @@ def geometry_confidence(
     return c
 
 
+# align_landmarks_similarity is now imported from step1.py
+# Keeping a wrapper for backward compatibility if needed
 def align_landmarks_similarity(
     xy_px: np.ndarray,
     *,
@@ -233,68 +197,12 @@ def align_landmarks_similarity(
     eps: float = 1e-9,
 ) -> AlignResult:
     """
-    Canonical alignment (CQS baseline):
-      - translate so eye midpoint is origin
-      - (optional) rotate so eye line is horizontal
-      - scale so interocular distance = 1
-
-    Returns:
-      aligned_xy: (K,2) float32 in canonical coords
-      face_height/face_width: computed in aligned coords
+    Canonical alignment (CQS baseline) - delegates to step1.py.
+    
+    Note: step1.py's version always rotates (CQS baseline behavior).
+    The allow_rotation parameter is kept for API compatibility but ignored.
     """
-    if xy_px.ndim != 2 or xy_px.shape[1] != 2:
-        raise ValueError(f"xy_px must have shape (K,2); got {tuple(xy_px.shape)}")
-    if xy_px.shape[0] < 468:
-        raise ValueError(f"Expected MediaPipe 468 landmarks; got K={xy_px.shape[0]}")
-
-    left_eye, right_eye = compute_eye_centers_mediapipe468(xy_px)
-    eye_mid = 0.5 * (left_eye + right_eye)
-    v = right_eye - left_eye
-    inter = float(np.linalg.norm(v))
-    if inter < 10.0:  # matches step1's conservative pixel threshold
-        return AlignResult(
-            ok=False,
-            aligned_xy=None,
-            interocular=inter,
-            face_height=0.0,
-            face_width=0.0,
-            reject_reason="interocular_too_small",
-        )
-
-    xy0 = xy_px.astype(np.float32) - eye_mid.astype(np.float32)
-
-    if allow_rotation:
-        theta = math.atan2(float(v[1]), float(v[0]))
-        c = math.cos(-theta)
-        s = math.sin(-theta)
-        R = np.array([[c, -s], [s, c]], dtype=np.float32)
-        xy1 = (xy0 @ R.T).astype(np.float32)
-    else:
-        xy1 = xy0
-
-    xy2 = xy1 / (inter + eps)  # scale so interocular=1
-
-    face_h = _dist(xy2[LANDMARK_IDXS["forehead"]], xy2[LANDMARK_IDXS["chin"]])
-    face_w = _dist(xy2[LANDMARK_IDXS["cheek_l"]], xy2[LANDMARK_IDXS["cheek_r"]])
-
-    if (not np.isfinite(face_h)) or face_h < 0.2:
-        return AlignResult(
-            ok=False,
-            aligned_xy=None,
-            interocular=1.0,
-            face_height=float(face_h),
-            face_width=float(face_w),
-            reject_reason="face_height_invalid",
-        )
-
-    return AlignResult(
-        ok=True,
-        aligned_xy=xy2.astype(np.float32),
-        interocular=1.0,
-        face_height=float(face_h),
-        face_width=float(face_w),
-        reject_reason=None,
-    )
+    return step1.align_landmarks_similarity(xy_px, eps=eps)
 
 
 def build_cqs_geometry_descriptor_from_aligned(
@@ -307,36 +215,18 @@ def build_cqs_geometry_descriptor_from_aligned(
     """
     Builds the fixed-order CQS geometry descriptor G (8-D) from aligned landmarks.
     Ordering matches GEOMETRY_FEATURE_NAMES.
+    Uses step1.py's geometry_vector (ground truth).
     """
-    I = LANDMARK_IDXS
-    # Denominators in CQS baseline:
-    interocular = 1.0  # by construction
-    fh = float(face_height)
-    fw = float(face_width)
-
-    # Numerators
-    face_w_over_h = _dist(aligned_xy[I["cheek_l"]], aligned_xy[I["cheek_r"]]) / (fh + eps)
-    left_eye_w_over_ioc = _dist(aligned_xy[I["le_outer"]], aligned_xy[I["le_inner"]]) / (interocular + eps)
-    right_eye_w_over_ioc = _dist(aligned_xy[I["re_outer"]], aligned_xy[I["re_inner"]]) / (interocular + eps)
-    interocular_over_fw = _dist(aligned_xy[I["le_outer"]], aligned_xy[I["re_outer"]]) / (fw + eps)
-    mouth_w_over_fw = _dist(aligned_xy[I["mouth_l"]], aligned_xy[I["mouth_r"]]) / (fw + eps)
-    nose_wing_over_fw = _dist(aligned_xy[I["nose_l"]], aligned_xy[I["nose_r"]]) / (fw + eps)
-    nose_len_over_fh = _dist(aligned_xy[I["nose_bridge"]], aligned_xy[I["nose_tip"]]) / (fh + eps)
-    jaw_opening_angle = _angle_abc(aligned_xy[I["cheek_l"]], aligned_xy[I["chin"]], aligned_xy[I["cheek_r"]], eps=eps)
-
-    G = np.array(
-        [
-            face_w_over_h,
-            left_eye_w_over_ioc,
-            right_eye_w_over_ioc,
-            interocular_over_fw,
-            mouth_w_over_fw,
-            nose_wing_over_fw,
-            nose_len_over_fh,
-            jaw_opening_angle,
-        ],
-        dtype=np.float32,
+    # Use step1.py's geometry_vector with the schema from step1.py
+    geom_dict = step1.geometry_vector(
+        aligned_xy=aligned_xy,
+        face_height=face_height,
+        face_width=face_width,
+        schema=_GEOMETRY_SCHEMA,
+        eps=eps,
     )
+    # Convert dict to array in schema order (matches GEOMETRY_FEATURE_NAMES)
+    G = np.array([geom_dict[name] for name in GEOMETRY_FEATURE_NAMES], dtype=np.float32)
     return G
 
 
@@ -591,7 +481,9 @@ class GeometryTokenMapper:
             raise ValueError("token_norm must be one of: layernorm, none")
 
     def parameters(self):
-        return self.net.parameters()
+        if self.norm is None:
+            return self.net.parameters()
+        return itertools.chain(self.net.parameters(), self.norm.parameters())
 
     def state_dict(self) -> Dict[str, Any]:
         return self.net.state_dict() if self.norm is None else {"net": self.net.state_dict(), "norm": self.norm.state_dict()}
