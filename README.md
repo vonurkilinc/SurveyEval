@@ -1,5 +1,5 @@
 # SurveyEval
-
+python GeoAdapterStep2.py --mode ffhq --device cuda --fp16 --model stabilityai/stable-diffusion-xl-base-1.0 --resolution 256 --batch-size 1 --max-train-steps 200 --log-every 10
 A comprehensive evaluation framework for face generation and manipulation methods, focusing on geometric and perceptual quality assessment.
 
 ## Overview
